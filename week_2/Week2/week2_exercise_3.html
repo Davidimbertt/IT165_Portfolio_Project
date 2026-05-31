@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Form</h1>
+        <p>Fields marked with * are required.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name *</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email *</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Message Details</legend>
+
+                <label for="subject">Subject *</label><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+
+                <label for="message">Message *</label><br>
+                <textarea id="message" name="message" rows="6" cols="40" required></textarea><br><br>
+
+                <label for="priority">Priority</label><br>
+                <select id="priority" name="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select><br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Contact Preferences</legend>
+
+                <p>Preferred Contact Method:</p>
+
+                <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+                <label for="contactEmail">Email</label><br>
+
+                <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                <label for="contactPhone">Phone</label><br><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to updates</label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Contact Page</p>
+    </footer>
+
+</body>
+</html>
