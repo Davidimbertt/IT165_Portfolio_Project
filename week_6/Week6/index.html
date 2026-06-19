@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6: CSS Animations and JavaScript Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Week 6 Assignment</p>
+            <h1>CSS Animations & JavaScript Slideshow</h1>
+            <p>CSS transitions, 2D transformations, complex keyframes, and a working 5-image vanilla JavaScript slideshow.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-block">
+            <div class="section-heading">
+                <span>5.1</span>
+                <h2>CSS Transitions & 2D Transformations</h2>
+            </div>
+
+            <div class="card-wrapper">
+                <article class="transition-card">
+                    <h3>Smooth Time Duration</h3>
+                    <p>This wrapper card uses a smooth <strong>0.3s</strong> transition to animate movement and shadow changes.</p>
+                </article>
+
+                <article class="transition-card">
+                    <h3>Directional Displacement</h3>
+                    <p>Hovering applies <strong>translateY(-12px)</strong> to move the element upward in a specific direction.</p>
+                </article>
+
+                <article class="transition-card">
+                    <h3>Scale and Elevation</h3>
+                    <p>The hover state uses <strong>scale(1.02)</strong> and a deeper box shadow to create elevation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block animation-panel">
+            <div class="section-heading center">
+                <span>5.2</span>
+                <h2>Complex CSS Keyframe Animations</h2>
+            </div>
+
+            <div class="animation-stage">
+                <div class="animated-box">Rotation + Border Shift</div>
+            </div>
+
+            <p class="center-text">
+                This animation uses a custom <strong>@keyframes</strong> timeline with <strong>0%</strong>, <strong>50%</strong>, and <strong>100%</strong> milestones.
+                It combines rotation transforms with sequential border-color changes.
+            </p>
+        </section>
+
+        <section class="section-block">
+            <div class="section-heading">
+                <span>5.3</span>
+                <h2>Basic Vanilla JavaScript 5-Image Slideshow</h2>
+            </div>
+
+            <div class="slideshow-container">
+                <img id="slideshow-image" src="image1.jpg" alt="Mountain landscape slideshow image">
+
+                <div class="slide-info">
+                    <h3 id="image-title">Mountain Landscape</h3>
+                    <p id="image-description">Image 1 of 5</p>
+                </div>
+
+                <div class="controls">
+                    <button id="previous-btn" type="button">Previous</button>
+                    <p id="image-counter">Image 1 of 5</p>
+                    <button id="next-btn" type="button">Next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for Week 6 Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
