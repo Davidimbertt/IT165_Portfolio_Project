@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 56px;
+  background-color: #f4f4f4;
+  color: #212529;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* About and Contact header */
+.page-header {
+  background: linear-gradient(135deg, #212529, #0d6efd);
+  padding: 90px 0;
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+  border-radius: 14px;
+  border: none;
+}
+
+.feature-card,
+.project-card,
+.about-card,
+.contact-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover,
+.project-card:hover,
+.about-card:hover,
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* Navbar hover */
+.navbar-brand,
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #0d6efd !important;
+  transform: scale(1.05);
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Image hover */
+.portfolio-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* DOM demo box */
+.dom-demo-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #198754;
+}
+
+/* Form */
+.form-control {
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Footer */
+.footer {
+  background-color: #212529;
+  color: white;
+  padding: 25px 0;
+}
+
+/* Mobile design */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+}
